@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Адаптив: сайт подстраивается под ширину устройства -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Фотостудия «Счастье»</title>
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">СЧАСТЬЕ</a>
+
+      <!-- Навигация по якорям -->
+      <nav class="nav">
+        <a href="#about">О студии</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Первый экран -->
+    <section class="hero section-animate" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__label">Студия атмосферной фотографии</div>
+
+          <h1>Фотосессии с настроением, светом и характером</h1>
+
+          <p>
+            Камерная фотостудия для портретных, семейных и коммерческих съемок.
+            Создаем визуальные истории в теплой эстетике и спокойной атмосфере.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#contacts" class="btn btn--primary">Записаться на съемку</a>
+            <a href="#services" class="btn btn--secondary">Выбрать тариф</a>
+          </div>
+        </div>
+
+        <div class="hero__photo">
+          <img src="pics/girl-crowd.jpg" alt="Девушка в толпе">
+          <div class="hero__photo-card">
+            <span>5 лет опыта</span>
+            <p>Более 500 счастливых клиентов в портфолио</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О студии -->
+    <section class="about section-animate" id="about">
+      <div class="container about__inner">
+        <div class="section-head">
+          <span>О студии</span>
+          <h2>Пространство, где кадр становится личной историей</h2>
+          <p>
+            «Счастье» — это фотостудия с мягким светом, продуманными зонами и авторским подходом.
+            Мы помогаем раскрыться в кадре даже тем, кто редко фотографируется.
+          </p>
+        </div>
+
+        <div class="advantages">
+          <article class="advantage-card">
+            <div class="icon"><i class="fa-solid fa-medal"></i></div>
+            <h3>Опыт</h3>
+            <p>Работаем с портретами, семейными съемками, контентом для брендов и личных проектов.</p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+            <h3>Оборудование</h3>
+            <p>Профессиональный свет, фоны, реквизит и несколько интерьерных зон для разных задач.</p>
+          </article>
+
+          <article class="advantage-card">
+            <div class="icon"><i class="fa-regular fa-face-smile"></i></div>
+            <h3>Подход</h3>
+            <p>Помогаем с позированием, настроением, подбором образа и общей концепцией съемки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services section-animate" id="services">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span>Услуги и цены</span>
+          <h2>Выберите формат съемки</h2>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Портретная</h3>
+              <span>от 3 500 ₽</span>
+            </div>
+
+            <p>Индивидуальная съемка для соцсетей, резюме, портфолио или личного архива.</p>
+
+            <ul>
+              <li>1 час съемки</li>
+              <li>15 фото в обработке</li>
+              <li>Помощь с позированием</li>
+            </ul>
+
+            <div class="service-card__image service-card__image--portrait">
+              <img src="pics/girl_near_wall.jpg" alt="Портретная фотосессия">
+            </div>
+          </article>
+
+          <article class="service-card service-card--accent">
+            <div class="service-card__top">
+              <h3>Семейная</h3>
+              <span>от 5 500 ₽</span>
+            </div>
+
+            <p>Теплая съемка для пары, семьи, родителей с детьми или важного события.</p>
+
+            <ul>
+              <li>1,5 часа съемки</li>
+              <li>25 фото в обработке</li>
+              <li>2 интерьерные зоны</li>
+            </ul>
+
+            <div class="service-card__image service-card__image--family">
+              <img src="pics/family_portrait.jpg" alt="Семейная фотосессия">
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Коммерческая</h3>
+              <span>от 8 000 ₽</span>
+            </div>
+
+            <p>Контент для брендов, экспертов, каталогов, карточек товаров и рекламных материалов.</p>
+
+            <ul>
+              <li>2 часа съемки</li>
+              <li>35 фото в обработке</li>
+              <li>Концепция и мудборд</li>
+            </ul>
+
+            <div class="service-card__image service-card__image--commercial">
+              <img src="pics/commerical_soap.jpg" alt="Коммерческая фотосессия">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section class="portfolio section-animate" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <span>Портфолио</span>
+          <h2>Атмосфера наших съемок</h2>
+        </div>
+
+        <div class="portfolio__grid">
+          <div class="portfolio-item portfolio-item--cafe">
+            <img src="pics/cafe.jpg" alt="Портрет девушки в кафе">
+          </div>
+
+          <div class="portfolio-item portfolio-item--couple">
+            <img src="pics/couple.jpg" alt="Черно-белая уличная сцена с парой">
+          </div>
+
+          <div class="portfolio-item portfolio-item--eye">
+            <img src="pics/eye.jpg" alt="Крупный портрет с акцентом на глаз">
+          </div>
+
+          <div class="portfolio-item portfolio-item--field">
+            <img src="pics/field.jpg" alt="Черно-белый портрет в поле">
+          </div>
+
+          <div class="portfolio-item portfolio-item--flower">
+            <img src="pics/flower_girl.jpg" alt="Девушка с цветами на фоне поезда">
+          </div>
+
+          <div class="portfolio-item portfolio-item--smoking">
+            <img src="pics/smoking.jpg" alt="Черно-белый портрет с дымом">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews section-animate" id="reviews">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span>Отзывы</span>
+          <h2>Что говорят наши клиенты</h2>
+        </div>
+
+        <div class="reviews__grid">
+          <article class="review-card">
+            <div class="review-card__person">
+              <div class="avatar">А</div>
+              <div>
+                <h3>Анна</h3>
+                <span>Портретная съемка</span>
+              </div>
+            </div>
+            <p>Очень спокойная атмосфера. Фотограф помогал с позами, поэтому результат получился живым и естественным.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__person">
+              <div class="avatar">М</div>
+              <div>
+                <h3>Мария</h3>
+                <span>Семейная съемка</span>
+              </div>
+            </div>
+            <p>Понравился интерьер и мягкий свет. Дети быстро освоились, а фотографии получились очень теплыми.</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-card__person">
+              <div class="avatar">И</div>
+              <div>
+                <h3>Илья</h3>
+                <span>Контент для бренда</span>
+              </div>
+            </div>
+            <p>Съемку подготовили заранее: референсы, фон, свет. Получили качественный материал для сайта и соцсетей.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты и форма -->
+    <section class="contacts section-animate" id="contacts">
+      <div class="container contacts__grid">
+        <div class="contacts__info">
+          <div class="section-head section-head--left">
+            <span>Контакты</span>
+            <h2>Запишитесь на съемку</h2>
+            <p>Оставьте заявку, и мы свяжемся с вами, чтобы подобрать дату, формат и настроение съемки.</p>
+          </div>
+
+          <div class="contact-list">
+            <div><i class="fa-solid fa-location-dot"></i><span>г. Москва, Полнокадровый переулок, 15</span></div>
+            <div><i class="fa-solid fa-phone"></i><span>+7 (999) 123-45-67</span></div>
+            <div><i class="fa-solid fa-envelope"></i><span>hello@schastie.studio</span></div>
+          </div>
+
+          <!-- Статичные иконки соцсетей -->
+          <div class="socials">
+            <span class="social-link" aria-label="VK"><i class="fa-brands fa-vk"></i></span>
+            <span class="social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></span>
+            <span class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span>
+          </div>
+        </div>
+
+        <!-- Форма заявки -->
+        <form class="form" id="contactForm" novalidate autocomplete="off">
+          <label>
+            <span>Имя и Фамилия</span>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              placeholder="Имя и Фамилия"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="words"
+              spellcheck="false"
+            >
+            <small class="form__error" id="nameError">Введите Ваши Имя и Фамилию через пробел</small>
+          </label>
+
+          <label>
+            <span>Телефон</span>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+7 (___) ___-__-__"
+              autocomplete="off"
+              autocorrect="off"
+              spellcheck="false"
+            >
+            <small class="form__error" id="phoneError">Введите корректный номер телефона</small>
+          </label>
+
+          <label>
+            <span>Тип фотосессии</span>
+            <select name="shootType" id="shootType" autocomplete="off">
+              <option value="">Выберите тип съемки</option>
+              <option value="portrait">Портретная</option>
+              <option value="family">Семейная</option>
+              <option value="commercial">Коммерческая</option>
+            </select>
+            <small class="form__error" id="typeError">Выберите тип фотосессии</small>
+          </label>
+
+          <button type="submit" class="btn btn--primary form__button">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      © 2026 Фотостудия «Счастье». Все права защищены.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
